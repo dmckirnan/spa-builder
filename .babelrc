@@ -1,0 +1,21 @@
+{
+  "presets" : ["es2015", "react", "stage-1"],
+  "env": {
+    "start": {
+      "presets": [
+        "react-hmre"
+      ]
+    },
+    "test": {
+      "presets": ["es2015", "react"]
+    }
+  },
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "components": "./src/components"
+      }
+    }]
+  ]
+}
